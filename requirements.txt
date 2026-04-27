@@ -1,0 +1,6 @@
+torch
+transformers
+gradio
+openai-whisper
+pyttsx3
+Pillow
