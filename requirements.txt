@@ -1,6 +1,32 @@
-torch
-transformers
-gradio
-openai-whisper
-pyttsx3
-Pillow
+# J.A.R.V.I.S. v7.0 — Python Dependencies
+# Install all with: pip install -r requirements.txt
+
+# ── REQUIRED ──────────────────────────────────────────
+groq>=0.9.0              # Groq LLM API (Llama 3.3 70B)
+python-dotenv>=1.0.0     # Secure .env API key loading
+rich>=13.0.0             # Beautiful terminal UI
+
+# ── VOICE ─────────────────────────────────────────────
+SpeechRecognition>=3.10.0   # Microphone / voice input
+pyttsx3>=2.90               # Text-to-speech (offline)
+PyAudio>=0.2.13             # Microphone backend for SR
+
+# ── WEB / APIs ────────────────────────────────────────
+requests>=2.31.0         # HTTP calls (weather, news, stocks)
+wikipedia>=1.4.0         # Wikipedia summaries
+
+# ── DATA / ANALYSIS ───────────────────────────────────
+pandas>=2.0.0            # CSV file analysis
+numpy>=1.24.0            # Numerical computing
+matplotlib>=3.7.0        # Plotting / graphs
+
+# ── SYSTEM ────────────────────────────────────────────
+psutil>=5.9.0            # CPU / RAM / Disk diagnostics
+pyperclip>=1.8.2         # Clipboard copy/paste
+Pillow>=10.0.0           # Screenshots + image analysis
+
+# ── WEB AUTOMATION (optional, for advanced tasks) ─────
+selenium>=4.15.0         # Browser automation
+webdriver-manager>=4.0.0 # Auto-installs ChromeDriver
+
+PyPDF2>=3.0.0
